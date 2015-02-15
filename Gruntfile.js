@@ -10,10 +10,6 @@ module.exports = function (grunt) {
                 configFile: 'grunt/karma.conf.js',
                 singleRun: true
             },
-            cov: {
-                configFile: 'grunt/karma.cov.conf.js',
-                singleRun: true
-            },
             watch: {
                 configFile: 'grunt/karma.watch.conf.js',
                 singleRun: false

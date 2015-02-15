@@ -3,16 +3,16 @@
     "node": ">= 0.10.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.5"
-  },
-  "dependencies": {
-    "bower-webpack-plugin": "^0.1.6",
     "grunt-karma": "^0.10.1",
-    "karma-chrome-launcher": "^0.1.7",
     "karma-mocha": "^0.1.10",
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-webpack": "^1.5.0",
-    "lodash": "^3.2.0",
     "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "bower-webpack-plugin": "^0.1.6",
+    "karma-chrome-launcher": "^0.1.7",
+    "lodash": "^3.2.0"
   }
 }

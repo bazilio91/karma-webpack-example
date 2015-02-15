@@ -1,7 +1,6 @@
 /*global module:false*/
 
 module.exports = function (grunt) {
-
     // Project configuration.
     grunt.initConfig({
         // Task configuration.
@@ -21,9 +20,6 @@ module.exports = function (grunt) {
         }
     });
 
-    // These plugins provide necessary tasks.
-    grunt.loadNpmTasks('grunt-karma');
-
     grunt.registerTask('default', function () {
         grunt.loadNpmTasks('grunt-webpack');
         //grunt.loadNpmTasks('grunt-karma');
@@ -31,6 +27,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('test', function () {
+        grunt.loadNpmTasks('grunt-karma');
         grunt.loadNpmTasks('grunt-webpack');
         //grunt.loadNpmTasks('grunt-karma');
         grunt.task.run(['webpack:test', 'karma:spec']);
